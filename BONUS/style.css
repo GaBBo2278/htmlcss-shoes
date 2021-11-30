@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Rubik Mono One', sans-serif;
+    scroll-behavior: smooth;
 }
 /* IMPOSTATO LE GRANDEZZE GENERALI DI OGNI SEZIONE DELLA PAGINE */
 .box {
@@ -48,4 +49,27 @@ h1 {
 /* IMPOSTATO IL COLORE GIALLO AL TESTO DELLE PRIME DUE SEZIONI */
 #yellow h1 {
     color: #008000;
+}
+/* IMPOSTATO LA POSIZIONE DEL MENU' */
+.menu {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+}
+/* IMPOSTATO LA LISTA COME INLINE-BLOCK PER L'ALLINEAMENTO ORIZZONTALE */
+.menu ul li {
+    display: inline-block;
+}
+/* STILIZZATO LE VOCI DEL MENU' */
+.menu ul li a{
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+}
+/* IMPOSTATO L'OMBREGGIATURA DELLE VOCI DEL MUNU AL PASSAGGIO DEL MOUSE */
+.menu ul li a:hover{
+    box-shadow: 0px 0px 10px 2px black;
 }
